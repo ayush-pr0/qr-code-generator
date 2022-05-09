@@ -8,7 +8,7 @@ const qrImg = document.querySelector(".qr-code img");
 generateBtn.addEventListener("click", function () {
     const inputVal = input.value;
     console.log(inputVal);
-    if (!inputVal) {
+    if (!inputVal || inputVal.trim().length === 0) {
         container.classList.remove("active");
         return;
     }

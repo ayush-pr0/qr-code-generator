@@ -12,6 +12,6 @@ generateBtn.addEventListener("click", function () {
         container.classList.remove("active");
         return;
     }
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${inputVal}`;
+    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${inputVal}`;
     container.classList.add("active");
 });
